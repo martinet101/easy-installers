@@ -18,6 +18,10 @@ a = Analysis(['Installer.py'],
 
 a.datas += [ ('calc.png', '.\\calc.png', 'DATA')]
 a.datas += [ ('calc.ico', '.\\calc.ico', 'DATA')]
+a.datas += [ ('zip.png', '.\\zip.png', 'DATA')]
+a.datas += [ ('zip.ico', '.\\zip.ico', 'DATA')]
+a.datas += [ ('music.png', '.\\music.png', 'DATA')]
+a.datas += [ ('music.ico', '.\\music.ico', 'DATA')]
 
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
@@ -34,4 +38,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False , uac_admin=True, icon='calc.ico')
+          console=False , uac_admin=True, icon=input("\n\n\n\nInsert app codename (calc/zip/music): ")+'.ico')

@@ -8,8 +8,8 @@ import os, sys
 running_dir= ""
 if getattr(sys, 'frozen', False): # Running as compiled
         running_dir = sys._MEIPASS + "\\" # pylint: disable=no-member
-app_codename = "calc"
-app_name = "SomePythonThings Calc"
+app_codename = "zip"
+app_name = "SomePythonThings Zip Manager"
 app_link = f"http://www.somepythonthings.tk/versions/{app_codename}.ver"
 icon_pic = running_dir+f"{app_codename}.ico"
 picture = running_dir+f"{app_codename}.png"
